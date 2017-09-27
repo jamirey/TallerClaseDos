@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Reporte2 extends AppCompatActivity {
 
     private TableLayout tabla;
-    private ArrayList<Celular> celular;
+    private ArrayList<Celular> celulares;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +19,11 @@ public class Reporte2 extends AppCompatActivity {
         setContentView(R.layout.activity_reporte2);
 
         tabla=(TableLayout) findViewById(R.id.tabla2);
-        celular = Datos.obtener();
-        for (int i = 0; i < celular.size() ; i++) {
+        celulares = Datos.obtener();
+        for (int i = 0; i < celulares.size() ; i++) {
             TableRow fila = new TableRow(this);
 
-            if(celular.get(i).getMarca().equals("Samsung")&& ((celular.get(i).getCapacidad().equals("2GB"))||celular.get(i).getCapacidad().equals("3GB")||celular.get(i).getCapacidad().equals("4GB"))){
+            if(celulares.get(i).getMarca().equals("Samsung")&& ((celulares.get(i).getCapacidad().equals("2GB"))||celulares.get(i).getCapacidad().equals("3GB")||celulares.get(i).getCapacidad().equals("4GB"))){
                 TextView c1 = new TextView(this);
                 TextView c2 = new TextView(this);
                 TextView c3 = new TextView(this);
@@ -31,11 +31,11 @@ public class Reporte2 extends AppCompatActivity {
                 TextView c5 = new TextView(this);
                 TextView c6 = new TextView(this);
                 c1.setText("" + (i + 1));
-                c2.setText("" + celular.get(i).getPrecio());
-                c3.setText("" + celular.get(i).getCapacidad());
-                c4.setText("" + celular.get(i).getMarca());
-                c5.setText("" + celular.get(i).getSistemaOperativo());
-                c6.setText("" + celular.get(i).getColor());
+                c2.setText("" + celulares.get(i).getPrecio());
+                c3.setText("" + celulares.get(i).getCapacidad());
+                c4.setText("" + celulares.get(i).getMarca());
+                c5.setText("" + celulares.get(i).getSistemaOperativo());
+                c6.setText("" + celulares.get(i).getColor());
 
                 fila.addView(c1);
                 fila.addView(c2);

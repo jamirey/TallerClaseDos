@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Reporte3 extends AppCompatActivity {
 
     private TableLayout tabla;
-    private ArrayList<Celular> celular;
+    private ArrayList<Celular> celulares;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +19,13 @@ public class Reporte3 extends AppCompatActivity {
         setContentView(R.layout.activity_reporte3);
 
         tabla=(TableLayout) findViewById(R.id.tabla3);
-        celular = Datos.obtener();
-        Double price=Double.parseDouble(celular.get(0).getPrecio().toString());;
+        celulares = Datos.obtener();
+        Double price=Double.parseDouble(celulares.get(0).getPrecio().toString());;
         int pos=0;
-        for (int i = 0; i < celular.size() ; i++) {
+        for (int i = 0; i < celulares.size() ; i++) {
 
-            if (price > Double.parseDouble(celular.get(i).getPrecio().toString())) {
-                price = Double.parseDouble(celular.get(i).getPrecio().toString());
+            if (price > Double.parseDouble(celulares.get(i).getPrecio().toString())) {
+                price = Double.parseDouble(celulares.get(i).getPrecio().toString());
                 pos=i;
             }
         }
@@ -38,11 +38,11 @@ public class Reporte3 extends AppCompatActivity {
             TextView c5 = new TextView(this);
             TextView c6 = new TextView(this);
             c1.setText("" + (pos + 1));
-            c2.setText("" + celular.get(pos).getPrecio());
-            c3.setText("" + celular.get(pos).getCapacidad());
-            c4.setText("" + celular.get(pos).getMarca());
-            c5.setText("" + celular.get(pos).getSistemaOperativo());
-            c6.setText("" + celular.get(pos).getColor());
+            c2.setText("" + celulares.get(pos).getMarca());
+            c3.setText("" + celulares.get(pos).getCapacidad());
+            c4.setText("" + celulares.get(pos).getMarca());
+            c5.setText("" + celulares.get(pos).getSistemaOperativo());
+            c6.setText("" + celulares.get(pos).getColor());
             fila.addView(c1);
             fila.addView(c2);
             fila.addView(c3);

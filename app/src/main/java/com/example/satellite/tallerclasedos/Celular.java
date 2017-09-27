@@ -7,12 +7,12 @@ package com.example.satellite.tallerclasedos;
 public class Celular {
 
     private String marca;
-    private int capacidad;
+    private String capacidad;
     private String precio;
     private String color;
     private String SistemaOperativo;
 
-    public Celular(String marca, int capacidad, String precio, String color, String sistemaOperativo) {
+    public Celular(String marca, String capacidad, String precio, String color, String sistemaOperativo) {
         this.marca = marca;
         this.capacidad = capacidad;
         this.precio = precio;
@@ -32,7 +32,7 @@ public class Celular {
         SistemaOperativo = sistemaOperativo;
     }
 
-    public int getCapacidad() {
+    public String getCapacidad() {
         return capacidad;
     }
 
@@ -48,7 +48,7 @@ public class Celular {
         this.marca = marca;
     }
 
-    public void setCapacidad(int capacidad) {
+    public void setCapacidad(String capacidad) {
         this.capacidad = capacidad;
     }
 

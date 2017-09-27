@@ -35,6 +35,7 @@ public class CrearCelulares extends AppCompatActivity {
         prec = precio.getText().toString();
         col = color.getText().toString();
         sis = SistemaOperativo.getText().toString();
+
         Celular c = new Celular(marc,cap,prec,col,sis);
         c.guardar();
         Toast.makeText(this,resources.getString(R.string.mensaje_exitoso),Toast.LENGTH_SHORT).show();
