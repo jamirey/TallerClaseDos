@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Taller Clase Dos</string>
+    <string name="agregar">Agregar</string>
+    <string name="marca">Marca</string>
+    <string name="capacidad">Capacidad</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="limpiar">LIMPIAR</string>
+    <string name="crear">Crear Celular</string>
+    <string name="listar">Listar Celular</string>
+    <string name="repor1">Reporte 1</string>
+    <string name="repor2">Reporte 2</string>
+    <string name="repor3">Reporte 3</string>
+    <string name="no">No.</string>
+    <string name="color">Color</string>
+    <string name="precio">Precio</string>
+
+    <array name="Opciones">
+        <item>@string/crear</item>
+        <item>@string/listar</item>
+    </array>
+    <array name="Opciones2">
+        <item>@string/repor1</item>
+        <item>@string/repor2</item>
+        <item>@string/repor3</item>
+    </array>
+    <string name="mensaje_exitoso">Persona Guardada Exitosamente!</string>
+    <string name="sistemaoperativo">Sistema Operativo</string>
+
+</resources>
