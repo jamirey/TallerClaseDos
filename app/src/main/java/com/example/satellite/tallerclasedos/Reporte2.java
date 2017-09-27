@@ -31,11 +31,11 @@ public class Reporte2 extends AppCompatActivity {
                 TextView c5 = new TextView(this);
                 TextView c6 = new TextView(this);
                 c1.setText("" + (i + 1));
-                c2.setText("" + celulares.get(i).getPrecio());
+                c2.setText("" + celulares.get(i).getMarca());
                 c3.setText("" + celulares.get(i).getCapacidad());
-                c4.setText("" + celulares.get(i).getMarca());
-                c5.setText("" + celulares.get(i).getSistemaOperativo());
-                c6.setText("" + celulares.get(i).getColor());
+                c4.setText("" + celulares.get(i).getPrecio());
+                c5.setText("" + celulares.get(i).getColor());
+                c6.setText("" + celulares.get(i).getSistemaOperativo());
 
                 fila.addView(c1);
                 fila.addView(c2);

@@ -40,9 +40,9 @@ public class Reporte3 extends AppCompatActivity {
             c1.setText("" + (pos + 1));
             c2.setText("" + celulares.get(pos).getMarca());
             c3.setText("" + celulares.get(pos).getCapacidad());
-            c4.setText("" + celulares.get(pos).getMarca());
-            c5.setText("" + celulares.get(pos).getSistemaOperativo());
-            c6.setText("" + celulares.get(pos).getColor());
+            c4.setText("" + celulares.get(pos).getPrecio());
+            c5.setText("" + celulares.get(pos).getColor());
+            c6.setText("" + celulares.get(pos).getSistemaOperativo());
             fila.addView(c1);
             fila.addView(c2);
             fila.addView(c3);

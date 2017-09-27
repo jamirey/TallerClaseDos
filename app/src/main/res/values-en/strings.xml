@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taller Clase Dos</string>
+    <string name="agregar">Add</string>
+    <string name="capacidad">Capacity</string>
+    <string name="color">Color</string>
+    <string name="crear">Create Mobile</string>
+    <string name="guardar">SAVE</string>
+    <string name="limpiar">CLEAN</string>
+    <string name="marca">Brand</string>
+    <string name="listar">Cell Phone Listing</string>
+    <string name="mensaje_error_campo_vacio">Field can not be empty</string>
+    <string name="mensaje_exitoso">Person Saved Successfully!</string>
+    <string name="no">No.</string>
+    <string name="precio">Price</string>
+    <string name="repor1">Report 1</string>
+    <string name="repor2">Report 2</string>
+    <string name="repor3">Report 3</string>
+    <string name="sistemaoperativo">OS</string>
+</resources>

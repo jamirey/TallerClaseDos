@@ -40,4 +40,37 @@ public class CrearCelulares extends AppCompatActivity {
         c.guardar();
         Toast.makeText(this,resources.getString(R.string.mensaje_exitoso),Toast.LENGTH_SHORT).show();
     }
+
+    public void Borrar(View view){
+        marca.setText("");
+        capacidad.setText("");
+        precio.setText("");
+        color.setText("");
+        SistemaOperativo.setText("");
+    }
+
+    public boolean validar(){
+
+        if (marca.getText().toString().isEmpty()){
+            marca.setError(resources.getString(R.string.mensaje_error_campo_vacio));
+            return false;
+        }
+        if (capacidad.getText().toString().isEmpty()){
+            capacidad.setError(resources.getString(R.string.mensaje_error_campo_vacio));
+            return false;
+        }
+        if (precio.getText().toString().isEmpty()){
+            precio.setError(resources.getString(R.string.mensaje_error_campo_vacio));
+            return false;
+        }
+        if (color.getText().toString().isEmpty()){
+            color.setError(resources.getString(R.string.mensaje_error_campo_vacio));
+            return false;
+        }
+        if (SistemaOperativo.getText().toString().isEmpty()){
+            SistemaOperativo.setError(resources.getString(R.string.mensaje_error_campo_vacio));
+            return false;
+        }
+        return true;
+    }
 }

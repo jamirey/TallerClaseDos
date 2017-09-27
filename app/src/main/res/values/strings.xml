@@ -25,5 +25,6 @@
     </array>
     <string name="mensaje_exitoso">Persona Guardada Exitosamente!</string>
     <string name="sistemaoperativo">Sistema Operativo</string>
+    <string name="mensaje_error_campo_vacio">El campo no puede estar vacio</string>
 
 </resources>
